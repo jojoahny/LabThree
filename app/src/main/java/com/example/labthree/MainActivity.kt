@@ -74,7 +74,7 @@ class MainActivity : AppCompatActivity(), CustomAdapter.myClickListener {
                             return
                         }
                         showStateTwo()
-                        recycleTwo.adapter = CustomAdapter2(response.body(), this@MainActivity)
+                        recycleTwo.adapter = CustomAdapter2(response.body())
                     } else {
                         zeroStateTwo()
                         Toast.makeText(
@@ -110,7 +110,7 @@ class MainActivity : AppCompatActivity(), CustomAdapter.myClickListener {
                             return
                         }
                         showStateTwo()
-                        recycleTwo.adapter = CustomAdapter2(response.body(), this@MainActivity)
+                        recycleTwo.adapter = CustomAdapter2(response.body())
                     } else {
                         zeroStateTwo()
                         Toast.makeText(
